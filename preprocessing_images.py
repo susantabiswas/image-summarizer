@@ -29,5 +29,5 @@ img = preprocess_input(batch_img)
 # get the model predictions
 pred = image_model.predict(batch_img)
 
-with open('drive/Colab Notebooks/train_img_embeds.pickle', 'wb') as f:
+with open('train_img_enc.pickle', 'wb') as f:
     pickle.dump(pred, f)
