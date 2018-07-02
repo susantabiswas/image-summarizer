@@ -4,6 +4,7 @@ import pickle
 import numpy as np
 import keras
 from keras.applications import InceptionV3
+import os
 
 # load the pretrained inception model in keras
 image_model = InceptionV3(include_top=False)
