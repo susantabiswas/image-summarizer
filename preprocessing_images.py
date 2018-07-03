@@ -8,14 +8,14 @@ import os
 
 # load the pretrained inception model in keras
 image_model = InceptionV3(include_top=False)
-#image_model.add(L.GlobalAveragePooling2D())
+# adding a pooling layer to make the output a 1dimensional feature vector
 image_model = keras.engine.training.Model(image_model.inputs, keras.layers.GlobalAveragePooling2D()(image_model.output))
 
 # location for extracted images
-files_val = os.listdir('train2014/')
+directory_loc = os.listdir('train2014/')
 
 images = []
-for filename in files_val:
+for filename in directory_loc:
     # read image
     img = load_img('train2014/'+filename, target_size=(229, 229))
     # convert to numpy array
