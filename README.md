@@ -15,4 +15,8 @@ The model was trained for 22 epochs. The results are quite convincing.
     <img src = "media/model_plot.png">
 </p>
 
+#### References:
+MSCOCO dataset was downloaded from ![here](http://cocodataset.org/#home).<br>
+Sparse entropy loss function bug fix from ![here](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/22_Image_Captioning.ipynb)
+
 
