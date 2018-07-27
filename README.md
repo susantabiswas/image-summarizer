@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.io/susantabiswas/image-summarizer.svg)](http://hits.dwyl.io/susantabiswas/image-summarizer)
 # Image Summarization
 Image summary generation or caption generation for images using CNN-LSTM network. The model used ![MSCOCO](http://cocodataset.org/#home) dataset for training the model. The entire implementation is done in Keras.
 
